@@ -27,6 +27,7 @@ if not os.path.exists(subset_dir):
     os.makedirs(subset_dir, exist_ok=True)
     print("create dir {}".format(subset_dir))
 
+print()
 subset.to_json(subset_path)
 
 # 加载新数据集, train是默认的split
